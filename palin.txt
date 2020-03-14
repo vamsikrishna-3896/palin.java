@@ -1,0 +1,26 @@
+public class Asending {
+	public static void main(String[] args) {
+                 int n=121;
+		String s="";
+		while(n>0) {
+			int x=n%10;
+			s=s+x;
+			n=n/10;
+		}
+		System.out.println(s);
+		int k=Integer.parseInt(s);
+		System.out.println(k);
+		int m=k;
+		if(m==n) {
+			System.out.println("palindrome");
+		}else
+			System.out.println("not palindrome");
+	}
+}
+/*
+why it is printing not palindrom????
+output
+121
+121
+not palindrome
+ */
